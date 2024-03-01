@@ -1,12 +1,6 @@
-# RESTful API in Go
+# Go RESTful API
 
-This is a simple RESTful API written in go
-
-## Features
-
-- Separated responsibilities
-- Error logging for database connections errors
-- Auto DB migration
+This is a simple RESTful API written in go.
 
 ## Dependencies
 
@@ -18,12 +12,9 @@ This is a simple RESTful API written in go
 
 ## Directories
 
-- `/api/`: Has API endpoints and controllers
-- `/schema/`: Has database initial operations and models
-  - `/schema/connection/`: Creates DB connection
-  - `/schema/models/`: Has DB model definitions
-  - `/schema/migrations/`: Migrates BD models
-- `/helpers/`: Has helper functions
+- `/api/`: API endpoints
+- `/helpers/`: Helper functions
+- `/models/`: DB models
 
 ## Example endpoint
 
@@ -31,13 +22,8 @@ This is a simple RESTful API written in go
 
 With this endpoint is possible to:
 
-- **List all users**
-  - `GET /user`
-- **List a certain user**
-  - `GET /user/:id`
-- **Create a user**
-  - `POST /user`
-- **Update a user**
-  - `PUT /user/:id`
-- **Delete a user**
-  - `DELETE /user/:id`
+- **List all users**: `GET /user`
+- **List a certain user**: `GET /user/:id`
+- **Create a user**: `POST /user`
+- **Update a user**: `PUT /user/:id`
+- **Delete a user**: `DELETE /user/:id`

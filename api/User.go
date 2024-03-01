@@ -2,7 +2,7 @@ package api
 
 import (
 	"restAPI/database/helpers"
-	"restAPI/database/schema/models"
+	"restAPI/database/models"
 
 	"net/http"
 
